@@ -1,10 +1,11 @@
 import './App.css';
+import Greeting from './Greeting';
 
 function App() {
   return (
     <>
       <div>
-        <h1>Hello</h1>
+        <Greeting name="Thomas" age={69}></Greeting>
       </div>
     </>
   );
