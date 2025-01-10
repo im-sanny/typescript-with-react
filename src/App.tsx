@@ -4,6 +4,7 @@ import Button from './Button';
 import Counter from './Counter';
 import Counter2 from './Counter2';
 import Greeting from './Greeting';
+import List from './List';
 
 interface UserContextType {
   name: string;
@@ -38,6 +39,10 @@ function App() {
           <Counter />
           <Counter2 />
           <DisplayName></DisplayName>
+          <List
+            items={['Apple', 'Banana', 'Mango']}
+            renderItem={(item) => <span>{item}</span>}
+          />
         </div>
       </UserProvider>
     </>
