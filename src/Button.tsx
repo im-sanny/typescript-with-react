@@ -1,14 +1,13 @@
-interface ButtonProps {
-  label: string;
-  onClick: () => void;
+import React from 'react';
+
+interface Props {
+  title: string;
+  onclick: () => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
-  return (
-    <div>
-      <button onClick={onClick}>{label}</button>
-    </div>
-  );
-};
+const Button: React.FC<Props> = React.memo(({ title, onclick }) => {
+  console.log(`Rendering button ${title}`);
+  return <button onClick={onclick}>{title}</button>;
+});
 
 export default Button;
