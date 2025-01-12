@@ -30,13 +30,15 @@ const DisplayName: React.FC = () => {
 };
 
 function App() {
-  const handleClick = () => alert('Button clicked');
+  const [count, setCount] = useState(0);
+  const handleClick = () => setCount(count + 1);
+
   return (
     <>
       <UserProvider>
         <div>
           <Greeting name="Thomas" age={69}></Greeting>
-          <Button label="Click Me" onClick={handleClick}></Button>
+          <Button title="Click me" onClick={handleClick}></Button>
           <Counter />
           <Counter2 />
           <DisplayName></DisplayName>

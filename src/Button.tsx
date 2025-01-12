@@ -2,12 +2,12 @@ import React from 'react';
 
 interface Props {
   title: string;
-  onclick: () => void;
+  onClick: () => void;
 }
 
-const Button: React.FC<Props> = React.memo(({ title, onclick }) => {
+const Button: React.FC<Props> = React.memo(({ title, onClick }) => {
   console.log(`Rendering button ${title}`);
-  return <button onClick={onclick}>{title}</button>;
+  return <button onClick={onClick}>{title}</button>;
 });
 
 export default Button;
