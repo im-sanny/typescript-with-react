@@ -1,11 +1,11 @@
 import React, { createContext, ReactNode, useContext, useState } from 'react';
 import './App.css';
-import Button from './Button';
-import Counter from './Counter';
-import Counter2 from './Counter2';
-import Greeting from './Greeting';
-import List from './List';
-import LoginForm from './LoginForm';
+import Button from './component/Button';
+import Counter from './component/Counter';
+import Counter2 from './component/Counter2';
+import Greeting from './component/Greeting';
+import List from './component/List';
+import LoginForm from './component/LoginForm';
 
 interface UserContextType {
   name: string;
